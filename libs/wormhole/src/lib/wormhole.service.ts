@@ -1,27 +1,33 @@
-import {Injectable, TemplateRef} from '@angular/core';
+import type {TemplateRef, Type} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
+
+export interface IWorm {
+  template?: TemplateRef<any>;
+  component?: Type<any>;
+};
 
 @Injectable({
   providedIn: 'root'
 })
 export class WormholeService {
-  tunnels: { [id: string]: BehaviorSubject<TemplateRef<any>> } = {};
+  tunnels: { [id: string]: BehaviorSubject<IWorm | undefined> } = {};
 
-  send(tunnel: string, template: TemplateRef<any>): void {
-    if (!tunnel) {
-      throw new Error('tunnel name is a required field, got empty');
-    }
-    const channel = this.tunnels[tunnel]
+  send(tunnel: string, worm: IWorm): void {
+    console.log('WormholeService.send()', tunnel, worm);
+    let channel = this.tunnels[tunnel]
     if (!channel) {
-      throw new Error('unknown tunnel: ' + tunnel);
+      channel = new BehaviorSubject<IWorm | undefined>(undefined);
+      this.tunnels[tunnel] = channel;
     }
-    channel.next(template);
+    channel.next(worm);
   }
 
-  receive(tunnel: string): Observable<TemplateRef<any>> {
+  receive(tunnel: string): Observable<IWorm> {
+    console.log('WormholeService.receive()', tunnel);
     let channel = this.tunnels[tunnel];
     if (!channel) {
-      channel = new BehaviorSubject<TemplateRef<any> | undefined>(undefined);
+      channel = new BehaviorSubject<IWorm | undefined>(undefined);
       this.tunnels[tunnel] = channel;
     }
     return channel.asObservable();

@@ -1,24 +1,28 @@
-import {Component, ContentChild, Input, OnDestroy, OnInit, TemplateRef} from '@angular/core';
-import {WormholeService} from '../wormhole.service';
+import type {TemplateRef, Type} from '@angular/core';
+import {Component, Input, OnChanges, OnDestroy, SimpleChanges} from '@angular/core';
+import {IWorm, WormholeService} from '../wormhole.service';
 
 @Component({
   selector: 'wormhole-entrance',
-  templateUrl: './wormhole-entrance.component.html',
+  template: '',
 })
-export class WormholeEntranceComponent implements OnInit, OnDestroy {
+export class WormholeEntranceComponent implements OnChanges, OnDestroy {
 
   @Input() public tunnel: string;
 
-  @ContentChild(TemplateRef) template;
+  @Input() template: TemplateRef<any>;
+  @Input() component: Type<any>;
 
   constructor(
     private readonly wormholeService: WormholeService,
   ) {
   }
 
-  ngOnInit(): void {
-    if (this.tunnel && this.template) {
-      this.wormholeService.send(this.tunnel, this.template);
+  ngOnChanges(changes: SimpleChanges) {
+    if (this.tunnel && (changes.template || changes.component)) {
+      const worm: IWorm = this.template ? {template: this.template} :
+        this.component ? {component: this.component} : undefined;
+      this.wormholeService.send(this.tunnel, worm);
     }
   }
 

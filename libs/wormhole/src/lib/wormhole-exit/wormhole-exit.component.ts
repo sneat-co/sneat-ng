@@ -1,4 +1,5 @@
-import {Component, Input, OnChanges, OnDestroy, SimpleChanges, TemplateRef} from '@angular/core';
+import type {TemplateRef, Type} from '@angular/core';
+import {Component, Input, OnChanges, OnDestroy, SimpleChanges} from '@angular/core';
 import {WormholeService} from '../wormhole.service';
 import {Subscription} from 'rxjs';
 
@@ -11,6 +12,7 @@ export class WormholeExitComponent implements OnChanges, OnDestroy {
   @Input() public tunnel: string;
 
   public template: TemplateRef<any>;
+  public component: Type<any>;
 
   private subscription: Subscription;
 
@@ -20,12 +22,14 @@ export class WormholeExitComponent implements OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log('WormholeExitComponent.ngOnChanges()', caches);
     if (changes.tunnel) {
       this.subscription?.unsubscribe();
     }
     if (this.tunnel) {
-      this.subscription = this.wormholeService.receive(this.tunnel).subscribe(template => {
-        this.template = template;
+      this.subscription = this.wormholeService.receive(this.tunnel).subscribe(worm => {
+        this.template = worm?.template;
+        this.component = worm?.component;
       });
     }
   }
