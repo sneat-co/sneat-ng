@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "pnpm"
+  },
+  "defaultProject": "sneat-ng-demo",
+  "schematics": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
+    },
+    "@nrwl/angular:component": {
+      "style": "scss"
+    }
+  },
+  "projects": {
+    "sneat-ng-demo": {
+      "projectType": "application",
+      "root": "apps/sneat-ng-demo",
+      "sourceRoot": "apps/sneat-ng-demo/src",
+      "prefix": "sneat",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/sneat-ng-demo",
+            "index": "apps/sneat-ng-demo/src/index.html",
+            "main": "apps/sneat-ng-demo/src/main.ts",
+            "polyfills": "apps/sneat-ng-demo/src/polyfills.ts",
+            "tsConfig": "apps/sneat-ng-demo/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "apps/sneat-ng-demo/src/favicon.ico",
+              "apps/sneat-ng-demo/src/assets"
+            ],
+            "styles": ["apps/sneat-ng-demo/src/styles.scss"],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/sneat-ng-demo/src/environments/environment.ts",
+                  "with": "apps/sneat-ng-demo/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "sneat-ng-demo:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "sneat-ng-demo:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sneat-ng-demo:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/sneat-ng-demo/src/**/*.ts",
+              "apps/sneat-ng-demo/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/apps/sneat-ng-demo"],
+          "options": {
+            "jestConfig": "apps/sneat-ng-demo/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "sneat-ng-demo-e2e": {
+      "root": "apps/sneat-ng-demo-e2e",
+      "sourceRoot": "apps/sneat-ng-demo-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/sneat-ng-demo-e2e/cypress.json",
+            "tsConfig": "apps/sneat-ng-demo-e2e/tsconfig.e2e.json",
+            "devServerTarget": "sneat-ng-demo:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "sneat-ng-demo:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["apps/sneat-ng-demo-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "wormhole": {
+      "projectType": "library",
+      "root": "libs/wormhole",
+      "sourceRoot": "libs/wormhole/src",
+      "prefix": "sneat",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/wormhole/tsconfig.lib.json",
+            "project": "libs/wormhole/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/wormhole/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/wormhole/src/**/*.ts",
+              "libs/wormhole/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/wormhole"],
+          "options": {
+            "jestConfig": "libs/wormhole/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    }
+  }
+}
