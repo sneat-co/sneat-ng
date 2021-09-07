@@ -38,8 +38,8 @@
     "@angular/platform-browser-dynamic": "^11.2.0",
     "@angular/router": "^11.2.0",
     "@nrwl/angular": "11.5.1",
-    "rxjs": "~6.6.3",
-    "tslib": "^2.0.0",
+    "rxjs": "6.6.7",
+    "tslib": "2.3.1",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
@@ -62,17 +62,17 @@
     "@types/node": "12.12.38",
     "@typescript-eslint/eslint-plugin": "4.3.0",
     "@typescript-eslint/parser": "4.3.0",
-    "cypress": "^6.0.1",
+    "cypress": "6.9.1",
     "dotenv": "6.2.0",
     "eslint": "7.10.0",
     "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-cypress": "2.11.3",
     "jest": "26.2.2",
     "jest-preset-angular": "8.3.2",
-    "ng-packagr": "^11.0.0",
+    "ng-packagr": "11.2.4",
     "prettier": "2.2.1",
     "ts-jest": "26.4.0",
-    "ts-node": "~9.1.1",
-    "typescript": "~4.0.3"
+    "ts-node": "9.1.1",
+    "typescript": "4.0.8"
   }
 }
