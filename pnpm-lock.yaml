@@ -37,7 +37,7 @@ specifiers:
   jest: 26.2.2
   jest-preset-angular: 8.3.2
   ng-packagr: 11.2.4
-  prettier: 2.2.1
+  prettier: 2.3.2
   rxjs: 6.6.7
   ts-jest: 26.5.6
   ts-node: 9.1.1
@@ -54,7 +54,7 @@ dependencies:
   '@angular/platform-browser': 11.2.14_cc220f0cf26568bab1577f0589f48c4b
   '@angular/platform-browser-dynamic': 11.2.14_85d62dd5beb851f0d1c066e080f8fa0d
   '@angular/router': 11.2.14_3c7adb9250e2c2c2751a0e8da273743b
-  '@nrwl/angular': 11.5.1_e9fc04fcce30ce7824a58bb2cc3d0f85
+  '@nrwl/angular': 11.5.1_d4e0a96b7ce30c2920c63bc20964a7ac
   rxjs: 6.6.7
   tslib: 2.3.1
   zone.js: 0.10.3
@@ -68,13 +68,13 @@ devDependencies:
   '@angular/compiler-cli': 11.2.14_6d7b70ddc1f64648a926cf1b4973ae73
   '@angular/language-service': 11.2.14
   '@nrwl/cli': 11.5.1
-  '@nrwl/cypress': 11.5.1_53067e8ab46facba077e6fd9c7418e94
-  '@nrwl/eslint-plugin-nx': 11.5.1_daef1f3993f0f30f338d1950d44eb35e
+  '@nrwl/cypress': 11.5.1_d6d8c3787a450c94b6b2440ab67cf047
+  '@nrwl/eslint-plugin-nx': 11.5.1_ef5e916c29fcce429c12b3a3fca69d21
   '@nrwl/jest': 11.5.1
   '@nrwl/linter': 11.5.1
   '@nrwl/nx-cloud': 12.3.10
   '@nrwl/tao': 11.5.1
-  '@nrwl/workspace': 11.5.1_prettier@2.2.1
+  '@nrwl/workspace': 11.5.1_prettier@2.3.2
   '@types/jest': 26.0.8
   '@types/node': 12.12.38
   '@typescript-eslint/eslint-plugin': 4.3.0_0ba7f1e1ab187ad221448435a7adadd7
@@ -87,7 +87,7 @@ devDependencies:
   jest: 26.2.2_ts-node@9.1.1
   jest-preset-angular: 8.3.2_4055e68f19a99c1147f34532942799a0
   ng-packagr: 11.2.4_367f6b444c601b5596d16e724ab6c936
-  prettier: 2.2.1
+  prettier: 2.3.2
   ts-jest: 26.5.6_jest@26.2.2+typescript@4.0.8
   ts-node: 9.1.1_typescript@4.0.8
   typescript: 4.0.8
@@ -2611,11 +2611,11 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /@nrwl/angular/11.5.1_e9fc04fcce30ce7824a58bb2cc3d0f85:
+  /@nrwl/angular/11.5.1_d4e0a96b7ce30c2920c63bc20964a7ac:
     resolution: {integrity: sha512-eLkrXadkNcPAOAudvG7KW5dzlq6SOXlEOHWmPSrPUFkiSVfUrIDBgm7NRMOTxbmSGMjJvbmbJ4ce8nc+4QuyMg==}
     dependencies:
       '@angular-devkit/schematics': 11.2.4
-      '@nrwl/cypress': 11.5.1_53067e8ab46facba077e6fd9c7418e94
+      '@nrwl/cypress': 11.5.1_d6d8c3787a450c94b6b2440ab67cf047
       '@nrwl/devkit': 11.5.1
       '@nrwl/jest': 11.5.1
       '@nrwl/linter': 11.5.1
@@ -2642,7 +2642,7 @@ packages:
       yargs: 15.4.1
       yargs-parser: 20.0.0
 
-  /@nrwl/cypress/11.5.1_53067e8ab46facba077e6fd9c7418e94:
+  /@nrwl/cypress/11.5.1_d6d8c3787a450c94b6b2440ab67cf047:
     resolution: {integrity: sha512-g245uo3CqCbY/TzhS/pq7C/G1oJUFtNZs/hd11qUMbBLYhy85Gn9abpd7nbWJwnXwf5K9FpUyEYgMVhV1VjFCg==}
     peerDependencies:
       cypress: '>= 3 < 7'
@@ -2650,7 +2650,7 @@ packages:
       '@cypress/webpack-preprocessor': 4.1.5
       '@nrwl/devkit': 11.5.1
       '@nrwl/linter': 11.5.1
-      '@nrwl/workspace': 11.5.1_prettier@2.2.1
+      '@nrwl/workspace': 11.5.1_prettier@2.3.2
       cypress: 6.9.1
       fork-ts-checker-webpack-plugin: 3.1.1
       fs-extra: 7.0.1
@@ -2678,14 +2678,14 @@ packages:
       strip-json-comments: 2.0.1
       tslib: 2.1.0
 
-  /@nrwl/eslint-plugin-nx/11.5.1_daef1f3993f0f30f338d1950d44eb35e:
+  /@nrwl/eslint-plugin-nx/11.5.1_ef5e916c29fcce429c12b3a3fca69d21:
     resolution: {integrity: sha512-wkPx+e/+0XabPOntBHeVFewYk3siU7sKQCIuNFyG0c4vr3y+Sw+xJLKUmgZ4lUf7PscEtTa7Vb427+4vYu1ZEw==}
     peerDependencies:
       '@typescript-eslint/parser': ^4.3.0
       eslint-config-prettier: ^8.1.0
     dependencies:
       '@nrwl/devkit': 11.5.1
-      '@nrwl/workspace': 11.5.1_prettier@2.2.1
+      '@nrwl/workspace': 11.5.1_prettier@2.3.2
       '@typescript-eslint/experimental-utils': 4.17.0_eslint@7.32.0+typescript@4.0.8
       '@typescript-eslint/parser': 4.3.0_eslint@7.32.0+typescript@4.0.8
       confusing-browser-globals: 1.0.10
@@ -2745,7 +2745,7 @@ packages:
       tslib: 2.1.0
       yargs-parser: 20.0.0
 
-  /@nrwl/workspace/11.5.1_prettier@2.2.1:
+  /@nrwl/workspace/11.5.1_prettier@2.3.2:
     resolution: {integrity: sha512-bRAK6LsyWjHIhI35yePAjq6FLQgAfAST2vAxelqAfA93Kjm3nrXAcq5eCGAgWvt6S4w27hz4c6NwsV5DDqSmlw==}
     peerDependencies:
       prettier: ^2.0.4
@@ -2766,7 +2766,7 @@ packages:
       minimatch: 3.0.4
       npm-run-all: 4.1.5
       opn: 5.5.0
-      prettier: 2.2.1
+      prettier: 2.3.2
       resolve: 1.17.0
       rxjs: 6.6.6
       semver: 6.3.0
@@ -10264,8 +10264,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.2.1:
-    resolution: {integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==}
+  /prettier/2.3.2:
+    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
