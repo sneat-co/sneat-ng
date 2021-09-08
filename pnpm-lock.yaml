@@ -35,7 +35,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   eslint-plugin-cypress: 2.11.3
   jest: 27.1.0
-  jest-preset-angular: 8.3.2
+  jest-preset-angular: 8.4.0
   ng-packagr: 12.2.1
   prettier: 2.3.2
   rxjs: 6.6.7
@@ -85,7 +85,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-cypress: 2.11.3_eslint@7.32.0
   jest: 27.1.0_ts-node@9.1.1
-  jest-preset-angular: 8.3.2_a172e18bf23f485b7d4cd16287ef0da0
+  jest-preset-angular: 8.4.0_a172e18bf23f485b7d4cd16287ef0da0
   ng-packagr: 12.2.1_a189bb2bc271e0639c111452a5a7d8ef
   prettier: 2.3.2
   ts-jest: 27.0.5_e1fb179667f2912df25561423b4bf907
@@ -2172,9 +2172,9 @@ packages:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.3
       '@types/istanbul-reports': 3.0.0
-      '@types/node': 12.12.50
+      '@types/node': 14.17.15
       '@types/yargs': 15.0.13
-      chalk: 4.1.0
+      chalk: 4.1.2
     dev: true
 
   /@jest/types/27.1.0:
@@ -7024,8 +7024,8 @@ packages:
     dependencies:
       jest-resolve: 27.1.0
 
-  /jest-preset-angular/8.3.2_a172e18bf23f485b7d4cd16287ef0da0:
-    resolution: {integrity: sha512-mdETK9E5tkCJPnPzB7NLXDB7CULbUEwcrA7eKU7WdR0u7ZIJqP0pvQxK5Cc70KBsOEaiwJK6LSGJm7aeqjSYYA==}
+  /jest-preset-angular/8.4.0_a172e18bf23f485b7d4cd16287ef0da0:
+    resolution: {integrity: sha512-lngQRVVMy2qdzhSzUVTkKFsWC+Z2uMFlJf8J5ZeapNZFsRYW2tjlVqdm+sJOTnVmMVnN7CtDqvRDwlyFTIYD+A==}
     engines: {node: '>= 10'}
     peerDependencies:
       '@angular/core': '>=2.0.0'
@@ -7194,8 +7194,8 @@ packages:
     engines: {node: '>= 10.14.2'}
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 12.20.24
-      chalk: 4.1.0
+      '@types/node': 14.17.15
+      chalk: 4.1.2
       graceful-fs: 4.2.6
       is-ci: 2.0.0
       micromatch: 4.0.4
@@ -10116,12 +10116,6 @@ packages:
     resolution: {integrity: sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==}
     hasBin: true
 
-  /semver/7.3.2:
-    resolution: {integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dev: true
-
   /semver/7.3.4:
     resolution: {integrity: sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==}
     engines: {node: '>=10'}
@@ -10924,9 +10918,9 @@ packages:
       lodash.memoize: 4.1.2
       make-error: 1.3.6
       mkdirp: 1.0.4
-      semver: 7.3.2
+      semver: 7.3.5
       typescript: 4.0.8
-      yargs-parser: 20.0.0
+      yargs-parser: 20.2.7
     dev: true
 
   /ts-jest/27.0.5_e1fb179667f2912df25561423b4bf907:
