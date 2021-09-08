@@ -43,13 +43,13 @@ specifiers:
   ts-node: 9.1.1
   tslib: 2.3.1
   typescript: 4.0.8
-  zone.js: 0.10.3
+  zone.js: 0.11.4
 
 dependencies:
   '@angular/animations': 12.2.4_@angular+core@12.2.4
   '@angular/common': 12.2.4_@angular+core@12.2.4+rxjs@6.6.7
   '@angular/compiler': 12.2.4
-  '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+  '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
   '@angular/forms': 12.2.4_cf887d031145d5606b4856a9417a9133
   '@angular/platform-browser': 12.2.4_1456d0f6caaa82c4761090c5c241bf69
   '@angular/platform-browser-dynamic': 12.2.4_ea9804479aff58b7db59775c063baa6e
@@ -57,7 +57,7 @@ dependencies:
   '@nrwl/angular': 12.9.0_b41bf343c03f0286f0fc4a51214c815c
   rxjs: 6.6.7
   tslib: 2.3.1
-  zone.js: 0.10.3
+  zone.js: 0.11.4
 
 devDependencies:
   '@angular-devkit/build-angular': 0.1102.14_66adbed870f11da289e5d734e92efa22
@@ -356,7 +356,7 @@ packages:
     peerDependencies:
       '@angular/core': 12.2.4
     dependencies:
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       tslib: 2.3.1
     dev: false
 
@@ -397,7 +397,7 @@ packages:
       '@angular/core': 12.2.4
       rxjs: ^6.5.3 || ^7.0.0
     dependencies:
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       rxjs: 6.6.7
       tslib: 2.3.1
     dev: false
@@ -437,7 +437,7 @@ packages:
       tslib: 2.3.1
     dev: false
 
-  /@angular/core/12.2.4_rxjs@6.6.7+zone.js@0.10.3:
+  /@angular/core/12.2.4_rxjs@6.6.7+zone.js@0.11.4:
     resolution: {integrity: sha512-+TlS6vI56YkvUoQI/Er7kXzi5sjd/oayb8+iTnecX1u0UOpBYzcE8NLeHqSS9qPUjWSiw0JjgW07gdzxlye3aQ==}
     engines: {node: ^12.14.1 || >=14.0.0}
     peerDependencies:
@@ -446,7 +446,7 @@ packages:
     dependencies:
       rxjs: 6.6.7
       tslib: 2.3.1
-      zone.js: 0.10.3
+      zone.js: 0.11.4
     dev: false
 
   /@angular/forms/12.2.4_cf887d031145d5606b4856a9417a9133:
@@ -459,7 +459,7 @@ packages:
       rxjs: ^6.5.3 || ^7.0.0
     dependencies:
       '@angular/common': 12.2.4_@angular+core@12.2.4+rxjs@6.6.7
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       '@angular/platform-browser': 12.2.4_1456d0f6caaa82c4761090c5c241bf69
       rxjs: 6.6.7
       tslib: 2.3.1
@@ -481,7 +481,7 @@ packages:
     dependencies:
       '@angular/common': 12.2.4_@angular+core@12.2.4+rxjs@6.6.7
       '@angular/compiler': 12.2.4
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       '@angular/platform-browser': 12.2.4_1456d0f6caaa82c4761090c5c241bf69
       tslib: 2.3.1
     dev: false
@@ -499,7 +499,7 @@ packages:
     dependencies:
       '@angular/animations': 12.2.4_@angular+core@12.2.4
       '@angular/common': 12.2.4_@angular+core@12.2.4+rxjs@6.6.7
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       tslib: 2.3.1
     dev: false
 
@@ -513,7 +513,7 @@ packages:
       rxjs: ^6.5.3 || ^7.0.0
     dependencies:
       '@angular/common': 12.2.4_@angular+core@12.2.4+rxjs@6.6.7
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       '@angular/platform-browser': 12.2.4_1456d0f6caaa82c4761090c5c241bf69
       rxjs: 6.6.7
       tslib: 2.3.1
@@ -8345,7 +8345,7 @@ packages:
       '@angular/platform-browser-dynamic': '>=2.0.0'
       jest: ^26.0.0
     dependencies:
-      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.10.3
+      '@angular/core': 12.2.4_rxjs@6.6.7+zone.js@0.11.4
       '@angular/platform-browser-dynamic': 12.2.4_ea9804479aff58b7db59775c063baa6e
       jest: 26.6.3_ts-node@9.1.1
       pretty-format: 26.6.2
@@ -13680,6 +13680,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zone.js/0.10.3:
-    resolution: {integrity: sha512-LXVLVEq0NNOqK/fLJo3d0kfzd4sxwn2/h67/02pjCjfKDxgx1i9QqpvtHD8CrBnSSwMw5+dy11O7FRX5mkO7Cg==}
+  /zone.js/0.11.4:
+    resolution: {integrity: sha512-DDh2Ab+A/B+9mJyajPjHFPWfYU1H+pdun4wnnk0OcQTNjem1XQSZ2CDW+rfZEUDjv5M19SBqAkjZi0x5wuB5Qw==}
+    dependencies:
+      tslib: 2.3.1
     dev: false
