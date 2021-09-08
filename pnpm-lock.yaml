@@ -32,7 +32,7 @@ specifiers:
   cypress: 6.9.1
   dotenv: 6.2.0
   eslint: 7.32.0
-  eslint-config-prettier: 8.1.0
+  eslint-config-prettier: 8.3.0
   eslint-plugin-cypress: 2.11.3
   jest: 26.2.2
   jest-preset-angular: 8.3.2
@@ -69,7 +69,7 @@ devDependencies:
   '@angular/language-service': 11.2.14
   '@nrwl/cli': 11.5.1
   '@nrwl/cypress': 11.5.1_d6d8c3787a450c94b6b2440ab67cf047
-  '@nrwl/eslint-plugin-nx': 11.5.1_ef5e916c29fcce429c12b3a3fca69d21
+  '@nrwl/eslint-plugin-nx': 11.5.1_a764cfae472be9109d1fcb8fa6eeab96
   '@nrwl/jest': 11.5.1
   '@nrwl/linter': 11.5.1
   '@nrwl/nx-cloud': 12.3.10
@@ -82,7 +82,7 @@ devDependencies:
   cypress: 6.9.1
   dotenv: 6.2.0
   eslint: 7.32.0
-  eslint-config-prettier: 8.1.0_eslint@7.32.0
+  eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-cypress: 2.11.3_eslint@7.32.0
   jest: 26.2.2_ts-node@9.1.1
   jest-preset-angular: 8.3.2_4055e68f19a99c1147f34532942799a0
@@ -2678,7 +2678,7 @@ packages:
       strip-json-comments: 2.0.1
       tslib: 2.1.0
 
-  /@nrwl/eslint-plugin-nx/11.5.1_ef5e916c29fcce429c12b3a3fca69d21:
+  /@nrwl/eslint-plugin-nx/11.5.1_a764cfae472be9109d1fcb8fa6eeab96:
     resolution: {integrity: sha512-wkPx+e/+0XabPOntBHeVFewYk3siU7sKQCIuNFyG0c4vr3y+Sw+xJLKUmgZ4lUf7PscEtTa7Vb427+4vYu1ZEw==}
     peerDependencies:
       '@typescript-eslint/parser': ^4.3.0
@@ -2689,7 +2689,7 @@ packages:
       '@typescript-eslint/experimental-utils': 4.17.0_eslint@7.32.0+typescript@4.0.8
       '@typescript-eslint/parser': 4.3.0_eslint@7.32.0+typescript@4.0.8
       confusing-browser-globals: 1.0.10
-      eslint-config-prettier: 8.1.0_eslint@7.32.0
+      eslint-config-prettier: 8.3.0_eslint@7.32.0
     transitivePeerDependencies:
       - debug
       - eslint
@@ -5778,8 +5778,8 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /eslint-config-prettier/8.1.0_eslint@7.32.0:
-    resolution: {integrity: sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==}
+  /eslint-config-prettier/8.3.0_eslint@7.32.0:
+    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
