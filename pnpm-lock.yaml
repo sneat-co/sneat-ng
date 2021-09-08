@@ -2,9 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@angular-devkit/build-angular': 0.1102.14
-  '@angular-eslint/eslint-plugin': ~1.0.0
-  '@angular-eslint/eslint-plugin-template': ~1.0.0
-  '@angular-eslint/template-parser': ~1.0.0
+  '@angular-eslint/eslint-plugin': 1.0.0
+  '@angular-eslint/eslint-plugin-template': 1.0.0
+  '@angular-eslint/template-parser': 1.0.0
   '@angular/animations': ^11.2.0
   '@angular/cli': 11.0.7
   '@angular/common': ^11.2.0
