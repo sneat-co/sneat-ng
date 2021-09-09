@@ -2,9 +2,9 @@ lockfileVersion: 5.3
 
 specifiers:
   '@angular-devkit/build-angular': 12.2.5
-  '@angular-eslint/eslint-plugin': 12.3.1
-  '@angular-eslint/eslint-plugin-template': 12.3.1
-  '@angular-eslint/template-parser': 12.3.1
+  '@angular-eslint/eslint-plugin': 12.4.0
+  '@angular-eslint/eslint-plugin-template': 12.4.0
+  '@angular-eslint/template-parser': 12.4.0
   '@angular/animations': 12.2.5
   '@angular/cli': 12.2.5
   '@angular/common': 12.2.5
@@ -61,9 +61,9 @@ dependencies:
 
 devDependencies:
   '@angular-devkit/build-angular': 12.2.5_7b0331d11cf5a02c770ec3f78ce8d5a5
-  '@angular-eslint/eslint-plugin': 12.3.1_24884dcb7da80300180cf85de5d4d19d
-  '@angular-eslint/eslint-plugin-template': 12.3.1_24884dcb7da80300180cf85de5d4d19d
-  '@angular-eslint/template-parser': 12.3.1_24884dcb7da80300180cf85de5d4d19d
+  '@angular-eslint/eslint-plugin': 12.4.0_24884dcb7da80300180cf85de5d4d19d
+  '@angular-eslint/eslint-plugin-template': 12.4.0_24884dcb7da80300180cf85de5d4d19d
+  '@angular-eslint/template-parser': 12.4.0_24884dcb7da80300180cf85de5d4d19d
   '@angular/cli': 12.2.5
   '@angular/compiler-cli': 12.2.5_99dd3b42fe64aa2a470ecc895975a67b
   '@angular/language-service': 12.2.5
@@ -294,8 +294,8 @@ packages:
       rxjs: 6.6.7
     dev: true
 
-  /@angular-eslint/eslint-plugin-template/12.3.1_24884dcb7da80300180cf85de5d4d19d:
-    resolution: {integrity: sha512-pz+nO64ma/9Sp2aeRnQ+Vktt7Fo1Lay/J+CG//3TIc3lYsoCTj4h42P6yCcxxJ9b4N7SUxMAnchA8eE5mJS4Ug==}
+  /@angular-eslint/eslint-plugin-template/12.4.0_24884dcb7da80300180cf85de5d4d19d:
+    resolution: {integrity: sha512-OWoQc6104JmmU9b8tEesvjMpOwbhXUSFONQD4E3TRmBr/9DToUZqP5Li2+aTegsVxgju8szQyDliqJg8vgyY1Q==}
     peerDependencies:
       '@angular/compiler': '>= 12.0.0 < 13.0.0'
       eslint: '*'
@@ -311,8 +311,8 @@ packages:
       - supports-color
     dev: true
 
-  /@angular-eslint/eslint-plugin/12.3.1_24884dcb7da80300180cf85de5d4d19d:
-    resolution: {integrity: sha512-KBm27onYggRcusA/BxuSkDGpVnIs8yG4ARio8ZAhe0H2XIRJTzJZ7oIBBjugDau03AGX3VMG6wAXailjJvsywg==}
+  /@angular-eslint/eslint-plugin/12.4.0_24884dcb7da80300180cf85de5d4d19d:
+    resolution: {integrity: sha512-BRxK2WvAyEW03oy8X2mnqxQqsh9Zoccw7RsSEA11EHuTt2M35vDI/qHDzLZEzBcwe1fC76qnLqw9jvKbyriLLA==}
     peerDependencies:
       '@angular/compiler': '>= 12.0.0 < 13.0.0'
       eslint: '*'
@@ -326,8 +326,8 @@ packages:
       - supports-color
     dev: true
 
-  /@angular-eslint/template-parser/12.3.1_24884dcb7da80300180cf85de5d4d19d:
-    resolution: {integrity: sha512-6DkXqTaVEHZdcN3isHQ2CDoTsKLuJ5C1SYEOuFzOU1Zp85SvjxO92v6gPkFPKk0iQNVRmQS2XcKef6weehUUGA==}
+  /@angular-eslint/template-parser/12.4.0_24884dcb7da80300180cf85de5d4d19d:
+    resolution: {integrity: sha512-DtuNF0fbcf1x8X9QIS9MjLs/zuqfD+3SxwSp+L5trNpf3H1J3LSuWnXmNO9id0tlVfB0wCmI0EHOEUcztQpcQw==}
     peerDependencies:
       '@angular/compiler': '>= 12.0.0 < 13.0.0'
       eslint: '*'
@@ -1793,13 +1793,7 @@ packages:
     resolution: {integrity: sha512-x/XYVQ1h684pp1mJwOV4CyvqZXqbc8CMsMGUnAbuc82ZCdv1U63w5RSUzgDSXQHG5Rps/kiksH6g2D5BuaKyXg==}
     dependencies:
       core-js-pure: 3.9.1
-      regenerator-runtime: 0.13.7
-    dev: true
-
-  /@babel/runtime/7.13.10:
-    resolution: {integrity: sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==}
-    dependencies:
-      regenerator-runtime: 0.13.7
+      regenerator-runtime: 0.13.9
     dev: true
 
   /@babel/runtime/7.14.8:
@@ -3027,7 +3021,7 @@ packages:
     peerDependencies:
       eslint: '*'
     dependencies:
-      '@types/json-schema': 7.0.7
+      '@types/json-schema': 7.0.9
       '@typescript-eslint/scope-manager': 4.28.2
       '@typescript-eslint/types': 4.28.2
       '@typescript-eslint/typescript-estree': 4.28.2_typescript@4.0.8
@@ -3571,7 +3565,7 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.13.10
+      '@babel/runtime': 7.14.8
       '@babel/runtime-corejs3': 7.13.10
     dev: true
 
@@ -10111,10 +10105,6 @@ packages:
 
   /regenerate/1.4.2:
     resolution: {integrity: sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==}
-
-  /regenerator-runtime/0.13.7:
-    resolution: {integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==}
-    dev: true
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
