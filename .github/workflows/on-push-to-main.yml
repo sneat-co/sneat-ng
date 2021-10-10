@@ -47,5 +47,5 @@ jobs:
 #        working-directory: ./src
 
       - name: NX build
-        run: pnpm run nx build
+        run: npm run nx build
         working-directory: ./src
