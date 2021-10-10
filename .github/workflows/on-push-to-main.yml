@@ -46,6 +46,6 @@ jobs:
 #        run: pnpm install
 #        working-directory: ./src
 
-      - name: NX build
-        run: pnpm run nx build
-        working-directory: ./src
+#      - name: NX build
+#        run: pnpm run nx build
+#        working-directory: ./src
