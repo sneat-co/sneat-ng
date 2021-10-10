@@ -51,7 +51,6 @@
     "@angular/compiler-cli": "12.2.9",
     "@angular/language-service": "12.2.9",
     "@nrwl/cli": "12.10.0",
-    "@nrwl/cypress": "12.10.0",
     "@nrwl/eslint-plugin-nx": "12.10.0",
     "@nrwl/jest": "12.10.0",
     "@nrwl/linter": "12.10.0",
