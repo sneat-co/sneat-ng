@@ -1,13 +1,18 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "sneat",
   "tasksRunnerOptions": {
     "default": {
@@ -21,11 +26,18 @@
     }
   },
   "projects": {
-    "sneat-ng-demo": { "tags": [] },
+    "random": {
+      "tags": []
+    },
+    "sneat-ng-demo": {
+      "tags": []
+    },
     "sneat-ng-demo-e2e": {
       "tags": [],
       "implicitDependencies": ["sneat-ng-demo"]
     },
-    "wormhole": { "tags": [] }
+    "wormhole": {
+      "tags": []
+    }
   }
 }

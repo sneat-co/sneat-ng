@@ -33,6 +33,47 @@
     }
   },
   "projects": {
+    "random": {
+      "projectType": "library",
+      "root": "libs/random",
+      "sourceRoot": "libs/random/src",
+      "prefix": "sneat",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": ["dist/libs/random"],
+          "options": {
+            "project": "libs/random/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/random/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/random/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/random"],
+          "options": {
+            "jestConfig": "libs/random/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/random/src/**/*.ts",
+              "libs/random/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "sneat-ng-demo": {
       "projectType": "application",
       "root": "apps/sneat-ng-demo",
