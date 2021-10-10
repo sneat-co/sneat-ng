@@ -1,4 +1,13 @@
-import { RandomIdOptions } from './options';
+import { InjectionToken } from '@angular/core';
+
+export const RANDOM_ID_OPTIONS = new InjectionToken('random ID options');
+
+export interface RandomIdOptions {
+  len?: number;
+  digits?: boolean
+  lowerCaseLetters?: boolean;
+  upperCaseLetters?: boolean;
+}
 
 export const defaultRandomIdLen = 20;
 
@@ -7,8 +16,11 @@ const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowerLetters = 'abcdefghijklmnopqrstuvwxyz';
 
 export function newRandomId(options?: RandomIdOptions): string {
-  // Alphanumeric characters
-  const chars = digits + upperLetters + lowerLetters;
+  const chars = (
+    (options?.digits ? digits : '') +
+    (options?.lowerCaseLetters ? lowerLetters : '') +
+    (options?.upperCaseLetters ? upperLetters : '')
+  ) || digits + lowerLetters + upperLetters;
   const id: string[] = [];
   const len = options?.len || defaultRandomIdLen;
   for (let i = 0; i < len; i++) {
