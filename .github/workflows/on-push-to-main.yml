@@ -42,11 +42,11 @@ jobs:
         uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.2.5
-          run_install: false
+          run_install: true
 
-      - name: PNPM install
-        run: pnpm install
-        working-directory: ./src
+#      - name: PNPM install
+#        run: pnpm install
+#        working-directory: ./src
 
       - name: NX build
         run: pnpm run nx affected:build
