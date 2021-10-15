@@ -1,8 +1,13 @@
-name: On merge to main
+name: On PR or push to main
+
 'on':
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
