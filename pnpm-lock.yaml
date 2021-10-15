@@ -25,7 +25,7 @@ specifiers:
   '@nrwl/tao': 12.10.0
   '@nrwl/workspace': 12.10.0
   '@types/jest': 27.0.2
-  '@types/node': 14.17.21
+  '@types/node': 14.17.27
   '@typescript-eslint/eslint-plugin': 5.0.0
   '@typescript-eslint/parser': 5.0.0
   dotenv: 10.0.0
@@ -72,7 +72,7 @@ devDependencies:
   '@nrwl/tao': 12.10.0
   '@nrwl/workspace': 12.10.0_prettier@2.4.1+ts-node@10.2.1
   '@types/jest': 27.0.2
-  '@types/node': 14.17.21
+  '@types/node': 14.17.27
   '@typescript-eslint/eslint-plugin': 5.0.0_a4af64102f5528ae51482fb2e9a7ef91
   '@typescript-eslint/parser': 5.0.0_eslint@7.32.0+typescript@4.3.5
   dotenv: 10.0.0
@@ -80,10 +80,10 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   jest: 27.2.5_ts-node@10.2.1
   jest-preset-angular: 10.0.1_8089d0a2a1bff897df5fc1019daaef22
-  ng-packagr: 12.2.3_46e22384c43ab68a0391773b1335490c
+  ng-packagr: 12.2.3_aa6d346f866cd825ed78efe839371d9e
   prettier: 2.4.1
   ts-jest: 27.0.6_264229bfc48990975d6164ef8299aad6
-  ts-node: 10.2.1_7cf8fed21381a04c57a7aa4188a2b43a
+  ts-node: 10.2.1_b4249ebc6f3fc3abec5689759acf39bc
   typescript: 4.3.5
 
 packages:
@@ -174,7 +174,7 @@ packages:
       loader-utils: 2.0.0
       mini-css-extract-plugin: 2.2.1_webpack@5.50.0
       minimatch: 3.0.4
-      ng-packagr: 12.2.3_46e22384c43ab68a0391773b1335490c
+      ng-packagr: 12.2.3_aa6d346f866cd825ed78efe839371d9e
       open: 8.2.1
       ora: 5.4.1
       parse5-html-rewriting-stream: 6.0.1
@@ -3559,6 +3559,10 @@ packages:
 
   /@types/node/14.17.21:
     resolution: {integrity: sha512-zv8ukKci1mrILYiQOwGSV4FpkZhyxQtuFWGya2GujWg+zVAeRQ4qbaMmWp9vb9889CFA8JECH7lkwCL6Ygg8kA==}
+
+  /@types/node/14.17.27:
+    resolution: {integrity: sha512-94+Ahf9IcaDuJTle/2b+wzvjmutxXAEXU6O81JHblYXUg2BDG+dnBy7VxIPHKAyEEDHzCMQydTJuWvrE+Aanzw==}
+    dev: true
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -7559,7 +7563,7 @@ packages:
       jest-validate: 27.2.5
       micromatch: 4.0.4
       pretty-format: 27.2.5
-      ts-node: 10.2.1_7cf8fed21381a04c57a7aa4188a2b43a
+      ts-node: 10.2.1_b4249ebc6f3fc3abec5689759acf39bc
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -7634,7 +7638,7 @@ packages:
       jest-validate: 27.2.5
       micromatch: 4.0.4
       pretty-format: 27.2.5
-      ts-node: 10.2.1_7cf8fed21381a04c57a7aa4188a2b43a
+      ts-node: 10.2.1_b4249ebc6f3fc3abec5689759acf39bc
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -8779,7 +8783,7 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /ng-packagr/12.2.3_46e22384c43ab68a0391773b1335490c:
+  /ng-packagr/12.2.3_aa6d346f866cd825ed78efe839371d9e:
     resolution: {integrity: sha512-2KHoglc7UgJMnzkytzZ1wU+IEkb6UrxoU4QZxnF5BSFh9vjUra2nCXH+EKkvxD3WTj0ikXmNIMeNWbwoZpGkgA==}
     engines: {node: ^12.14.1 || >=14.0.0}
     hasBin: true
@@ -8811,7 +8815,7 @@ packages:
       postcss-preset-env: 6.7.0
       postcss-url: 10.1.3_postcss@8.3.9
       rollup: 2.58.0
-      rollup-plugin-sourcemaps: 0.6.3_e5bccf7a481a4da2c03a532a55e86041
+      rollup-plugin-sourcemaps: 0.6.3_7a92aa8155386cfef99a0f0f6afab642
       rxjs: 6.6.7
       sass: 1.42.1
       stylus: 0.54.8
@@ -10560,7 +10564,7 @@ packages:
     dependencies:
       glob: 7.2.0
 
-  /rollup-plugin-sourcemaps/0.6.3_e5bccf7a481a4da2c03a532a55e86041:
+  /rollup-plugin-sourcemaps/0.6.3_7a92aa8155386cfef99a0f0f6afab642:
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -10571,7 +10575,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@2.58.0
-      '@types/node': 14.17.21
+      '@types/node': 14.17.27
       rollup: 2.58.0
       source-map-resolve: 0.6.0
     dev: true
@@ -11581,7 +11585,7 @@ packages:
       typescript: 4.3.5
     dev: false
 
-  /ts-node/10.2.1_7cf8fed21381a04c57a7aa4188a2b43a:
+  /ts-node/10.2.1_b4249ebc6f3fc3abec5689759acf39bc:
     resolution: {integrity: sha512-hCnyOyuGmD5wHleOQX6NIjJtYVIO8bPP8F2acWkB4W06wdlkgyvJtubO/I9NkI88hCFECbsEgoLc0VNkYmcSfw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
@@ -11601,7 +11605,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 14.17.21
+      '@types/node': 14.17.27
       acorn: 8.5.0
       acorn-walk: 8.2.0
       arg: 4.1.3
