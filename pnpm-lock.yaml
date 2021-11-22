@@ -32,8 +32,12 @@ specifiers:
   eslint: 8.3.0
   eslint-config-prettier: 8.3.0
   jest: 27.3.1
-  jest-preset-angular: 11.0.0
+  jest-preset-angular: 11.0.1
   ng-packagr: 13.0.6
+  postcss: ^8.3.9
+  postcss-import: ^14.0.2
+  postcss-preset-env: ^6.7.0
+  postcss-url: ^10.1.1
   prettier: 2.4.1
   rxjs: 7.4.0
   ts-jest: 27.0.7
@@ -79,8 +83,12 @@ devDependencies:
   eslint: 8.3.0
   eslint-config-prettier: 8.3.0_eslint@8.3.0
   jest: 27.3.1_ts-node@10.4.0
-  jest-preset-angular: 11.0.0_0159ee26d0e349916f9ca5e8763bd7a9
+  jest-preset-angular: 11.0.1_0159ee26d0e349916f9ca5e8763bd7a9
   ng-packagr: 13.0.6_65a7e5f2bd9d4d23d990f67e264278de
+  postcss: 8.3.11
+  postcss-import: 14.0.2_postcss@8.3.11
+  postcss-preset-env: 6.7.0
+  postcss-url: 10.1.3_postcss@8.3.11
   prettier: 2.4.1
   ts-jest: 27.0.7_b626c82449d36ccae0aa7169b15092e6
   ts-node: 10.4.0_7dd5cf9af763e621261d5cc88a052be2
@@ -4256,6 +4264,7 @@ packages:
   /errno/0.1.8:
     resolution: {integrity: sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==}
     hasBin: true
+    requiresBuild: true
     dependencies:
       prr: 1.0.1
     dev: true
@@ -6220,8 +6229,8 @@ packages:
     dependencies:
       jest-resolve: 27.3.1
 
-  /jest-preset-angular/11.0.0_0159ee26d0e349916f9ca5e8763bd7a9:
-    resolution: {integrity: sha512-+Vt6O2q/cvhbbrE4xplZjn3TqLcQpOtkk+zqoCFLW/Lo0fALEJIXECt1Ia288iJtxJU4qm7tLsQy1KmAaN+CzA==}
+  /jest-preset-angular/11.0.1_0159ee26d0e349916f9ca5e8763bd7a9:
+    resolution: {integrity: sha512-7img58VmxvPtwOrkEEczDbV3cjdO/1qzB8Edbde8/e3GJIIk+6LcPnHOLw+dagJxZhcWagYGbqNbR7dxqntOBQ==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
     peerDependencies:
       '@angular/compiler-cli': '>=10.0.0'
@@ -6231,6 +6240,7 @@ packages:
       '@angular/compiler-cli': 13.0.2_8287cab54374b1dd528c4690bdaed3c9
       '@angular/core': 13.0.2_rxjs@7.4.0+zone.js@0.11.4
       '@angular/platform-browser-dynamic': 13.0.2_f4754e85b40bc1aed7dddc58bbc14fd9
+      bs-logger: 0.2.6
       esbuild: 0.13.13
       jest-environment-jsdom: 27.3.1
       pretty-format: 27.3.1
@@ -6999,12 +7009,6 @@ packages:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: true
 
-  /nanoid/3.1.29:
-    resolution: {integrity: sha512-dW2pUSGZ8ZnCFIlBIA31SV8huOGCHb6OwzVCc7A69rb/a+SgPBwfmLvK5TKQ3INPbRkcI8a/Owo0XbiTNH19wg==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: true
-
   /nanoid/3.1.30:
     resolution: {integrity: sha512-zJpuPDwOv8D2zq2WRoMe1HsfZthVewpel9CAvTfc/2mBD1uUT/agc5f7GHGWXlYkFvi1mVxe4IjvP2HNrop7nQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -7061,9 +7065,9 @@ packages:
       jsonc-parser: 3.0.0
       less: 4.1.2
       ora: 5.4.1
-      postcss: 8.3.9
+      postcss: 8.3.11
       postcss-preset-env: 6.7.0
-      postcss-url: 10.1.3_postcss@8.3.9
+      postcss-url: 10.1.3_postcss@8.3.11
       rollup: 2.58.0
       rollup-plugin-sourcemaps: 0.6.3_29570acf1324e04e499f0d360117ca6c
       rxjs: 6.6.7
@@ -7965,7 +7969,7 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /postcss-url/10.1.3_postcss@8.3.9:
+  /postcss-url/10.1.3_postcss@8.3.11:
     resolution: {integrity: sha512-FUzyxfI5l2tKmXdYc6VTu3TWZsInayEKPbiyW+P6vmmIrrb4I6CGX0BFoewgYHLK+oIL5FECEK02REYRpBvUCw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -7974,7 +7978,7 @@ packages:
       make-dir: 3.1.0
       mime: 2.5.2
       minimatch: 3.0.4
-      postcss: 8.3.9
+      postcss: 8.3.11
       xxhashjs: 0.2.2
     dev: true
 
@@ -8005,15 +8009,6 @@ packages:
     dependencies:
       nanoid: 3.1.30
       picocolors: 1.0.0
-      source-map-js: 0.6.2
-    dev: true
-
-  /postcss/8.3.9:
-    resolution: {integrity: sha512-f/ZFyAKh9Dnqytx5X62jgjhhzttjZS7hMsohcI7HEI5tjELX/HxCy3EFhsRxyzGvrzFF+82XPvCS8T9TFleVJw==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.1.29
-      picocolors: 0.2.1
       source-map-js: 0.6.2
     dev: true
 
