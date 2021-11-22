@@ -21,23 +21,41 @@
         "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "ZTY4NzFmZDUtNDQ0ZS00NDFkLThjOGYtYjhhMGRjMzZjMjBhfHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
-        "showUsageWarnings": true
+        "showUsageWarnings": true,
+        "parallel": 1
       }
     }
   },
-  "projects": {
-    "random": {
-      "tags": []
+  "cli": {
+    "defaultCollection": "@nrwl/angular",
+    "packageManager": "pnpm"
+  },
+  "defaultProject": "sneat-ng-demo",
+  "generators": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
     },
-    "sneat-ng-demo": {
-      "tags": []
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
     },
-    "sneat-ng-demo-e2e": {
-      "tags": [],
-      "implicitDependencies": ["sneat-ng-demo"]
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
     },
-    "wormhole": {
-      "tags": []
+    "@nrwl/angular:component": {
+      "style": "scss"
     }
   }
 }

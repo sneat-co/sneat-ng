@@ -1,37 +1,5 @@
 {
   "version": 1,
-  "cli": {
-    "defaultCollection": "@nrwl/angular",
-    "packageManager": "pnpm"
-  },
-  "defaultProject": "sneat-ng-demo",
-  "schematics": {
-    "@nrwl/angular": {
-      "application": {
-        "linter": "eslint"
-      },
-      "library": {
-        "linter": "eslint"
-      },
-      "storybook-configuration": {
-        "linter": "eslint"
-      }
-    },
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
-    }
-  },
   "projects": {
     "random": {
       "projectType": "library",
@@ -72,7 +40,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": []
     },
     "sneat-ng-demo": {
       "projectType": "application",
@@ -160,7 +129,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "sneat-ng-demo-e2e": {
       "root": "apps/sneat-ng-demo-e2e",
@@ -186,7 +156,9 @@
             "lintFilePatterns": ["apps/sneat-ng-demo-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["sneat-ng-demo"]
     },
     "wormhole": {
       "projectType": "library",
@@ -223,7 +195,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     }
   }
 }
