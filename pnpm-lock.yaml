@@ -33,7 +33,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   jest: 27.3.1
   jest-preset-angular: 11.0.1
-  ng-packagr: 13.0.7
+  ng-packagr: 13.0.8
   postcss: 8.4.0
   postcss-import: 14.0.2
   postcss-preset-env: 6.7.0
@@ -61,7 +61,7 @@ dependencies:
   zone.js: 0.11.4
 
 devDependencies:
-  '@angular-devkit/build-angular': 13.0.3_87c484d1baebf6008cac0b641cfa91aa
+  '@angular-devkit/build-angular': 13.0.3_954b0cb2c8c1327ff853beeaa9f6dc58
   '@angular-eslint/eslint-plugin': 13.0.1_eslint@8.3.0+typescript@4.4.4
   '@angular-eslint/eslint-plugin-template': 13.0.1_eslint@8.3.0+typescript@4.4.4
   '@angular-eslint/template-parser': 13.0.1_eslint@8.3.0+typescript@4.4.4
@@ -84,7 +84,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@8.3.0
   jest: 27.3.1_ts-node@10.4.0
   jest-preset-angular: 11.0.1_0159ee26d0e349916f9ca5e8763bd7a9
-  ng-packagr: 13.0.7_949ffe5c5dc26429e22a2e7f2b078dec
+  ng-packagr: 13.0.8_949ffe5c5dc26429e22a2e7f2b078dec
   postcss: 8.4.0
   postcss-import: 14.0.2_postcss@8.4.0
   postcss-preset-env: 6.7.0
@@ -114,7 +114,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular/13.0.3_87c484d1baebf6008cac0b641cfa91aa:
+  /@angular-devkit/build-angular/13.0.3_954b0cb2c8c1327ff853beeaa9f6dc58:
     resolution: {integrity: sha512-5KFsknpnq3mc0KwcIDjvmqB3trz5cMt48dB0nrc23zkFI9v4hkpalc/OEg/H3G93K0c9g6dcyxmHkNfsU1+CHw==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -178,7 +178,7 @@ packages:
       loader-utils: 3.0.0
       mini-css-extract-plugin: 2.4.3_webpack@5.64.1
       minimatch: 3.0.4
-      ng-packagr: 13.0.7_949ffe5c5dc26429e22a2e7f2b078dec
+      ng-packagr: 13.0.8_949ffe5c5dc26429e22a2e7f2b078dec
       open: 8.4.0
       ora: 5.4.1
       parse5-html-rewriting-stream: 6.0.1
@@ -7033,8 +7033,8 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /ng-packagr/13.0.7_949ffe5c5dc26429e22a2e7f2b078dec:
-    resolution: {integrity: sha512-AzKNRZO0RIkpCFY9uYFYwlmlyEonhy99VW93Z9Dt0dDJNja7Wmy1aqd6voblK5Oa6lzvWIZcAmxBM3je/8lIeg==}
+  /ng-packagr/13.0.8_949ffe5c5dc26429e22a2e7f2b078dec:
+    resolution: {integrity: sha512-m2YhziyqntCsBxZFjqlaoA7Q4eY8yvZzGiTypkIFkG4ORqGb6dXt8WTUu2p+b7vx02bIqTa+1O+1T9KnyDqdiw==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
     hasBin: true
     peerDependencies:
