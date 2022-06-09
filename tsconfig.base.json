@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@sneat/random": ["libs/random/src/index.ts"],
+      "@sneat/rxstore": ["libs/rxstore/src/index.ts"],
       "@sneat/wormhole": ["libs/wormhole/src/index.ts"]
     }
   },

@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "random": "libs/random",
+    "rxstore": "libs/rxstore",
     "sneat-ng-demo": "apps/sneat-ng-demo",
     "sneat-ng-demo-e2e": "apps/sneat-ng-demo-e2e",
     "wormhole": "libs/wormhole"
