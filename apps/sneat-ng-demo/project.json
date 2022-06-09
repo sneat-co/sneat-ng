@@ -1,23 +1,23 @@
 {
   "projectType": "application",
-  "sourceRoot": "apps/empty-app/src",
+  "sourceRoot": "apps/sneat-ng-demo/src",
   "prefix": "sneat",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/empty-app",
-        "index": "apps/empty-app/src/index.html",
-        "main": "apps/empty-app/src/main.ts",
-        "polyfills": "apps/empty-app/src/polyfills.ts",
-        "tsConfig": "apps/empty-app/tsconfig.app.json",
+        "outputPath": "dist/apps/sneat-ng-demo",
+        "index": "apps/sneat-ng-demo/src/index.html",
+        "main": "apps/sneat-ng-demo/src/main.ts",
+        "polyfills": "apps/sneat-ng-demo/src/polyfills.ts",
+        "tsConfig": "apps/sneat-ng-demo/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
-          "apps/empty-app/src/favicon.ico",
-          "apps/empty-app/src/assets"
+          "apps/sneat-ng-demo/src/favicon.ico",
+          "apps/sneat-ng-demo/src/assets"
         ],
-        "styles": ["apps/empty-app/src/styles.scss"],
+        "styles": ["apps/sneat-ng-demo/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -36,8 +36,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/empty-app/src/environments/environment.ts",
-              "with": "apps/empty-app/src/environments/environment.prod.ts"
+              "replace": "apps/sneat-ng-demo/src/environments/environment.ts",
+              "with": "apps/sneat-ng-demo/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -57,10 +57,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "empty-app:build:production"
+          "browserTarget": "sneat-ng-demo:build:production"
         },
         "development": {
-          "browserTarget": "empty-app:build:development"
+          "browserTarget": "sneat-ng-demo:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -68,23 +68,23 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "empty-app:build"
+        "browserTarget": "sneat-ng-demo:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
         "lintFilePatterns": [
-          "apps/empty-app/**/*.ts",
-          "apps/empty-app/**/*.html"
+          "apps/sneat-ng-demo/**/*.ts",
+          "apps/sneat-ng-demo/**/*.html"
         ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/empty-app"],
+      "outputs": ["coverage/apps/sneat-ng-demo"],
       "options": {
-        "jestConfig": "apps/empty-app/jest.config.ts",
+        "jestConfig": "apps/sneat-ng-demo/jest.config.ts",
         "passWithNoTests": true
       }
     }

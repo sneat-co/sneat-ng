@@ -1,17 +1,17 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/empty-app-e2e/src",
+  "sourceRoot": "apps/sneat-ng-demo-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/empty-app-e2e/cypress.json",
-        "devServerTarget": "empty-app:serve:development"
+        "cypressConfig": "apps/sneat-ng-demo-e2e/cypress.json",
+        "devServerTarget": "sneat-ng-demo:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "empty-app:serve:production"
+          "devServerTarget": "sneat-ng-demo:serve:production"
         }
       }
     },
@@ -19,10 +19,10 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/empty-app-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/sneat-ng-demo-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["empty-app"]
+  "implicitDependencies": ["sneat-ng-demo"]
 }

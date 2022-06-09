@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'empty-app',
+  displayName: 'wormhole',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -9,7 +9,7 @@ export default {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/empty-app',
+  coverageDirectory: '../../coverage/libs/wormhole',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sneat/random": ["libs/random/src/index.ts"]
+      "@sneat/random": ["libs/random/src/index.ts"],
+      "@sneat/wormhole": ["libs/wormhole/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

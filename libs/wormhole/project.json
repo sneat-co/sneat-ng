@@ -1,0 +1,38 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/wormhole/src",
+  "prefix": "sneat",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/wormhole"],
+      "options": {
+        "project": "libs/wormhole/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/wormhole/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/wormhole/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/wormhole"],
+      "options": {
+        "jestConfig": "libs/wormhole/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/wormhole/**/*.ts", "libs/wormhole/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
