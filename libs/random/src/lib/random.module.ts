@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RandomIdService } from './randomid.service';
 
 @NgModule({
-  imports: [CommonModule],
+  providers: [
+    RandomIdService
+  ]
 })
-export class RandomModule {}
+export class RandomModule {
+}

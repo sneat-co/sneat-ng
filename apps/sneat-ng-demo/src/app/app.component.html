@@ -1,1 +1,23 @@
-<sneat-nx-welcome></sneat-nx-welcome>
+<header class="flex">
+  <h1>Welcome to {{ title }}!</h1>
+</header>
+<main>
+
+  <section>
+    <h2>Wormhole</h2>
+    <p></p>
+
+    <div style="border: 1px dashed grey; padding: 1em;">
+      <h3>Receiver</h3>
+      <sneat-wormhole-exit tunnel="test-tunnel"></sneat-wormhole-exit>
+    </div>
+
+    <div style="border: 1px dashed grey; padding: 1em; margin-top: 1em;">
+      <h3>Sender</h3>
+      <ng-template #t>Test</ng-template>
+      <sneat-wormhole-entrance tunnel="test-tunnel" [template]="t"></sneat-wormhole-entrance>
+    </div>
+
+
+  </section>
+</main>
