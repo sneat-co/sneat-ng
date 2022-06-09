@@ -1,11 +1,15 @@
 {
   "name": "@sneat/random",
-  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Alexander Trakhimenok",
+  "description": "A simple package to provide random IDs.",
+  "version": "0.0.5",
+  "repository": "https://github.com/sneat-co/sneat-ng",
   "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0"
+    "@angular/common": ">=12.0.0",
+    "@angular/core": ">=12.0.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": ">=2.3.0"
   }
 }
