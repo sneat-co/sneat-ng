@@ -1,0 +1,38 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/random/src",
+  "prefix": "sneat",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/random"],
+      "options": {
+        "project": "libs/random/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/random/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/random/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/random"],
+      "options": {
+        "jestConfig": "libs/random/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/random/**/*.ts", "libs/random/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
