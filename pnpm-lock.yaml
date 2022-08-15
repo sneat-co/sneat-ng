@@ -24,7 +24,7 @@ specifiers:
   '@nrwl/linter': 14.5.6
   '@nrwl/nx-cloud': latest
   '@nrwl/workspace': 14.5.6
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/node': 16.11.48
   '@typescript-eslint/eslint-plugin': 5.33.0
   '@typescript-eslint/parser': 5.33.0
@@ -75,9 +75,9 @@ devDependencies:
   '@nrwl/eslint-plugin-nx': 14.5.6_2d726dmkmyaiopzqybdbzv3xa4
   '@nrwl/jest': 14.5.6_pdffaf5ryao3rdsxo5plmw7vpq
   '@nrwl/linter': 14.5.6_jdb5ab7rkoy2rv7lejkww2vxdq
-  '@nrwl/nx-cloud': 14.3.0
+  '@nrwl/nx-cloud': 14.4.0
   '@nrwl/workspace': 14.5.6_a7rbsm6fwq3xvqwmp5oyrbgm6a
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/node': 16.11.48
   '@typescript-eslint/eslint-plugin': 5.33.0_yy5c4q6zhpajzhorvwhnwvctfe
   '@typescript-eslint/parser': 5.33.0_4rv7y5c6xz3vfxwhbrcxxi73bq
@@ -2816,12 +2816,13 @@ packages:
       - typescript
       - utf-8-validate
 
-  /@nrwl/nx-cloud/14.3.0:
-    resolution: {integrity: sha512-aByHe8Gp1/IT9CtQYlGLIYBgU+ZtrgEwblBX8kcoBNRPf1OOdouahjyasAjQ9zi1cznve8AzTTcLt2eSCHWfrw==}
+  /@nrwl/nx-cloud/14.4.0:
+    resolution: {integrity: sha512-4sKNzGhBqTipy4fPZD09ZBkV9UTPTn0JUOQxOI7ETqlHhT2u8SfeybSJMnPAi5H6DjsqsooM8JCKPR/7D4+8sQ==}
     hasBin: true
     dependencies:
       axios: 0.21.4
       chalk: 4.1.0
+      dotenv: 10.0.0
       node-machine-id: 1.1.12
       strip-json-comments: 3.1.1
       tar: 6.1.11
@@ -3359,10 +3360,10 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
 
-  /@types/jest/28.1.6:
-    resolution: {integrity: sha512-0RbGAFMfcBJKOmqRazM8L98uokwuwD5F8rHrv/ZMbrZBwVOWZUyPG6VFNscjYr/vjM3Vu4fRrCPbOs42AfemaQ==}
+  /@types/jest/28.1.7:
+    resolution: {integrity: sha512-acDN4VHD40V24tgu0iC44jchXavRNVFXQ/E6Z5XNsswgoSO/4NgsXoEYmPUGookKldlZQyIpmrEXsHI9cA3ZTA==}
     dependencies:
-      jest-matcher-utils: 28.1.3
+      expect: 28.1.3
       pretty-format: 28.1.3
     dev: true
 
