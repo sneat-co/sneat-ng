@@ -1,0 +1,8 @@
+allowBuilds:
+  '@nrwl/angular': true
+  '@parcel/watcher': true
+  core-js-pure: true
+  cypress: true
+  esbuild: true
+  nice-napi: true
+  nx: true
