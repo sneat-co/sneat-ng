@@ -1,3 +1,6 @@
+packages:
+  - '.'
+
 allowBuilds:
   '@nrwl/angular': true
   '@parcel/watcher': true
