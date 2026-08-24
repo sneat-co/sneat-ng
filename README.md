@@ -1,6 +1,8 @@
+# Sneat NG
 
+Sneat NG is an active Angular utility repository for low-level helpers shared by Sneat applications. It complements the primary frontend libraries with focused, reusable Angular workspace packages.
 
-# Sneat
+## Generated workspace
 
 This project was generated using [Nx](https://nx.dev).
 
