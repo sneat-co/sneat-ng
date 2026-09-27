@@ -66,5 +66,10 @@
     "typescript": "4.8.4",
     "webpack": "^5.108.4",
     "webpack-dev-server": "^4.15.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "js-yaml": ">=4.3.2"
+    }
   }
 }
