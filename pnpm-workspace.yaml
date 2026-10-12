@@ -1,6 +1,13 @@
 packages:
   - '.'
 
+overrides:
+  browserslist: '^4.28.7'
+  'find-cache-dir@4': '3.3.2'
+  'js-yaml@3': '^3.15.2'
+  'js-yaml@4': '^4.3.2'
+  'svgo@2': '^2.8.4'
+
 allowBuilds:
   '@nrwl/angular': true
   '@parcel/watcher': true
