@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
@@ -20,14 +20,14 @@ jobs:
       - run: git rev-parse HEAD~1
 
       - name: Setup NodeJS
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7.1.0
         with:
-          node-version: '16'
+          node-version: '22'
 
       - name: Install PNPM
-        uses: pnpm/action-setup@v2.2.4
+        uses: pnpm/action-setup@v6.1.0
         with:
-          version: 7
+          version: 11.20.0
           run_install: false
 
       - name: Get pnpm store directory
@@ -36,17 +36,20 @@ jobs:
           echo "pnpm_cache_dir=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - name: Cache PNPM store directory
-        uses: actions/cache@v3
+        uses: actions/cache@v6.1.0
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - run: pnpm install
+      - run: pnpm install --frozen-lockfile
 
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
-        uses: nrwl/nx-set-shas@v2
+        uses: nrwl/nx-set-shas@v5.0.1
 
       - name: nx affected
         run: pnpm run nx affected --target=build --base=${{ env.NX_BASE }}
+
+      - name: nx affected e2e
+        run: pnpm run nx affected --target=e2e --base=${{ env.NX_BASE }}
