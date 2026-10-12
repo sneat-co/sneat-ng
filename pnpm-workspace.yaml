@@ -1,6 +1,9 @@
 packages:
   - '.'
 
+overrides:
+  browserslist: 4.28.9
+  js-yaml: ">=4.3.2"
 allowBuilds:
   '@nrwl/angular': true
   '@parcel/watcher': true
