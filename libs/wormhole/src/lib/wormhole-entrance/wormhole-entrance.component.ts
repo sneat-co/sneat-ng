@@ -5,6 +5,7 @@ import {IWorm, WormholeService} from '../wormhole.service';
 @Component({
   selector: 'sneat-wormhole-entrance',
   template: '',
+  standalone: false,
 })
 export class WormholeEntranceComponent implements OnChanges, OnDestroy {
 

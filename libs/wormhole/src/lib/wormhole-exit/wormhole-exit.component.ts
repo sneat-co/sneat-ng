@@ -6,6 +6,7 @@ import {Subscription} from 'rxjs';
 @Component({
   selector: 'sneat-wormhole-exit',
   templateUrl: './wormhole-exit.component.html',
+  standalone: false,
 })
 export class WormholeExitComponent implements OnChanges, OnDestroy {
 
