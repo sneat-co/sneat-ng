@@ -4,8 +4,8 @@
   "prefix": "sneat",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:package",
-      "outputs": ["dist/libs/wormhole"],
+      "executor": "@nx/angular:package",
+      "outputs": ["{workspaceRoot}/dist/libs/wormhole"],
       "options": {
         "project": "libs/wormhole/ng-package.json"
       },
@@ -20,15 +20,15 @@
       "defaultConfiguration": "production"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/wormhole"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/wormhole"],
       "options": {
         "jestConfig": "libs/wormhole/jest.config.ts",
         "passWithNoTests": true
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "options": {
         "lintFilePatterns": ["libs/wormhole/**/*.ts", "libs/wormhole/**/*.html"]
       }

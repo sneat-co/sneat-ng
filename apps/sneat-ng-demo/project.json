@@ -4,13 +4,13 @@
   "prefix": "sneat",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "executor": "@angular/build:application",
+      "outputs": ["{workspaceRoot}/dist/apps/sneat-ng-demo"],
       "options": {
         "outputPath": "dist/apps/sneat-ng-demo",
         "index": "apps/sneat-ng-demo/src/index.html",
-        "main": "apps/sneat-ng-demo/src/main.ts",
-        "polyfills": "apps/sneat-ng-demo/src/polyfills.ts",
+        "browser": "apps/sneat-ng-demo/src/main.ts",
+        "polyfills": ["zone.js"],
         "tsConfig": "apps/sneat-ng-demo/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -43,36 +43,33 @@
           "outputHashing": "all"
         },
         "development": {
-          "buildOptimizer": false,
           "optimization": false,
-          "vendorChunk": true,
           "extractLicenses": false,
-          "sourceMap": true,
-          "namedChunks": true
+          "sourceMap": true
         }
       },
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@angular/build:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "sneat-ng-demo:build:production"
+          "buildTarget": "sneat-ng-demo:build:production"
         },
         "development": {
-          "browserTarget": "sneat-ng-demo:build:development"
+          "buildTarget": "sneat-ng-demo:build:development"
         }
       },
       "defaultConfiguration": "development"
     },
     "extract-i18n": {
-      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "executor": "@angular/build:extract-i18n",
       "options": {
-        "browserTarget": "sneat-ng-demo:build"
+        "buildTarget": "sneat-ng-demo:build"
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/eslint:lint",
       "options": {
         "lintFilePatterns": [
           "apps/sneat-ng-demo/**/*.ts",
@@ -81,8 +78,8 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/sneat-ng-demo"],
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/sneat-ng-demo"],
       "options": {
         "jestConfig": "apps/sneat-ng-demo/jest.config.ts",
         "passWithNoTests": true

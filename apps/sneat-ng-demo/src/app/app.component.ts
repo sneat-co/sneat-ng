@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'sneat-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: false,
 })
 export class AppComponent {
   title = 'sneat-ng-demo';
